@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Julio - Web Designer</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julio - Web Designer</title>
+    <link rel="shortcut icon" href="./img/logos/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="altOptions">
+          <label class="switch hover">
+            <input class="checkbox" type="checkbox" id="themeToggle" />
+            <span class="slider"></span>
+            <span class="flag br"></span>
+            <span class="flag us"></span>
+          </label>
+          <label class="switch hover">
+            <input class="checkbox" type="checkbox" id="themeToggle" />
+            <span class="slider"></span>
+            <span class="flag iconLight"></span>
+            <span class="flag iconDark"></span>
+          </label>
+        </div>
+
+        <div class="headerMenu">
+          <a class="logo" href="#">
+            <img src="./img/logos/Logo.png" width="40" height="40" />
+            <img src="./img/logos/Logotipo.svg" />
+          </a>
+          <nav>
+            <ul class="nav">
+              <li><a class="navLink hover" href="#portfolio">Portfólio</a></li>
+              <li><a class="navLink hover" href="#formacao">Formação</a></li>
+              <li>
+                <a class="navLink btnContato hover" href="#contato">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main container">
+      <img
+        src="./img/fotos/FotoPerfil.png"
+        alt="Foto de Julio Souza"
+        width="460"
+        height="500"
+      />
+
+      <div class="mainTitles">
+        <h1>
+          Web Designer <br />
+          UX & UI Design
+        </h1>
+        <div class="mainSubTitle">Sites profissionais</div>
+        <div class="mainDescription">Personalizado para você!</div>
+      </div>
+    </main>
+  </body>
 </html>

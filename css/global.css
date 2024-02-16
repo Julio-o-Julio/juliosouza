@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --gradient: linear-gradient(to bottom, var(--green-2), var(--green-1));
+
+  --green-1: #67dd0a;
+  --green-2: #b6f829;
+  --green-3: #c8fcc8;
+  --green-4: #5eaf5e;
+  --green-5: #042a04;
+
+  --gray-1: #f7f7f7;
+  --gray-2: #ededed;
+  --gray-3: #dedede;
+  --gray-4: #ccc;
+  --gray-5: #b2b2b2;
+  --gray-6: #9c9c9c;
+  --gray-7: #717171;
+  --gray-8: #595959;
+  --gray-9: #404040;
+  --gray-10: #2e2e2e;
+  --gray-11: #1a1a1a;
+  --gray-12: #0e0e0e;
+
+  --font-family-1: Roboto, Arial, Helvetica, sans-serif;
+  --font-family-2: "Fira Sans", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+
+  font-family: var(--font-family-1);
+  color: var(--gray-12);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-2);
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.hover {
+  border: 1px solid transparent;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.hover:hover {
+  box-shadow: 0 0 0 0.125rem var(--green-3);
+  border-color: var(--green-4);
+}

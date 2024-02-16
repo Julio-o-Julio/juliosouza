@@ -1,0 +1,86 @@
+.main {
+  padding: 4rem 2rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 2fr;
+}
+
+.main h1::before {
+  content: url("../img/decorations/Deco_2_LARGE.svg");
+  position: absolute;
+  top: 0.5rem;
+  left: -4.1rem;
+  width: 50px;
+  height: 177px;
+}
+
+.mainTitles {
+  padding-top: 2.5rem;
+}
+
+.mainSubTitle {
+  color: var(--gray-10);
+  font-size: 2rem;
+}
+
+.mainDescription {
+  color: var(--gray-7);
+  font-size: 1.125rem;
+}
+
+@media (max-width: 1050px) {
+  .mainTitles {
+    padding-top: 1.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    padding: 4rem 1rem;
+  }
+  .mainTitles {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 810px) {
+  .main h1 {
+    font-size: 3.5rem;
+  }
+  .main h1::before {
+    top: 0;
+  }
+  .mainSubTitle {
+    font-size: 1.5rem;
+  }
+  .mainDescription {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .main h1 {
+    font-size: 3rem;
+  }
+  .main h1::before {
+    top: -1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding-left: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .main img {
+    display: none;
+  }
+  .main h1 {
+    font-size: 3.5rem;
+  }
+  .main h1::before {
+    content: url("../img/decorations/Deco_1_LARGE.svg");
+    top: 0.125rem;
+    left: -1rem;
+  }
+}
