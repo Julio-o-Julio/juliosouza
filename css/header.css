@@ -121,3 +121,9 @@
   background-image: var(--gradient);
   border-color: #fff;
 }
+
+@media (max-width: 600px) {
+  a.none {
+    display: none;
+  }
+}
