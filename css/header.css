@@ -52,7 +52,7 @@
 
 .checkbox:checked + .slider::before {
   background-color: var(--gray-1);
-  transform: translateX(33.5px);
+  transform: translateX(33px);
 }
 
 .flag {

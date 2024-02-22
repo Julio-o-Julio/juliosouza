@@ -1,0 +1,218 @@
+.portfolio {
+  padding: 3rem 2.5rem 2rem;
+  margin: 0 4rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 2px solid var(--gray-2);
+  border-radius: 0.5rem;
+}
+
+.portfolio h2 {
+  grid-column: 1 / 3;
+}
+
+.decoText {
+  position: relative;
+}
+.decoText::before {
+  content: "Conforme o tempo passa, a experiência aumenta!";
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  color: var(--gray-2);
+  font-size: 2.5rem;
+  display: inline-block;
+  transform: rotate(-180deg);
+}
+
+.decoArrow {
+  width: auto;
+  max-height: 62rem;
+  margin-top: 2rem;
+}
+
+.aboutMe {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin: 1rem;
+  grid-row: 1;
+  grid-column: 3 / -1;
+}
+
+.designs {
+  padding: 4rem 1rem 1rem;
+  display: grid;
+  align-content: start;
+  gap: 2.5rem;
+  grid-column: 3 / -1;
+}
+
+.designBox {
+  position: relative;
+  height: min-content;
+}
+.designBox::before {
+  content: "12/2023";
+  color: var(--gray-7);
+  font-size: 1.125rem;
+  font-weight: 500;
+  position: absolute;
+  top: 38%;
+  left: -43.5%;
+  padding: 1rem 0;
+  background-color: #fff;
+}
+
+.designBox img {
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px var(--gray-2);
+}
+
+.btnViewMore {
+  cursor: pointer;
+  color: var(--gray-5);
+  padding: 0.5rem 1rem;
+  margin: 1rem auto 0;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+}
+.btnViewMore:hover {
+  text-decoration: underline;
+}
+
+.btnViewMore img {
+  width: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+  .designBox::before {
+    top: 32%;
+    left: -46%;
+  }
+  .decoArrow {
+    max-height: 60rem;
+  }
+}
+
+@media (max-width: 1062px) {
+  .portfolio h2 {
+    font-size: 7rem;
+    max-width: 20rem;
+  }
+  .designBox::before {
+    top: 32%;
+    left: -46%;
+  }
+  .decoText::before {
+    top: 6rem;
+    font-size: 2rem;
+  }
+  .decoArrow {
+    max-height: 54rem;
+  }
+}
+
+@media (max-width: 975px) {
+  .portfolio h2 {
+    font-size: 6rem;
+    max-width: 17rem;
+  }
+  .aboutMe {
+    font-size: 1.25rem;
+  }
+  .decoText::before {
+    top: 4rem;
+    font-size: 2rem;
+  }
+  .decoArrow {
+    max-height: 48rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .portfolio h2 {
+    font-size: 5rem;
+    max-width: 14rem;
+  }
+  .aboutMe {
+    font-size: 1.125rem;
+    margin-top: 0;
+  }
+  .designBox::before {
+    top: 30%;
+    left: -50%;
+  }
+  .decoText::before {
+    top: 5rem;
+    font-size: 1.5rem;
+  }
+  .decoArrow {
+    max-height: 40rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .portfolio h2 {
+    font-size: 4rem;
+    max-width: 11rem;
+  }
+  .aboutMe {
+    font-size: 1rem;
+  }
+  .designBox::before {
+    left: -54%;
+  }
+  .decoText::before {
+    top: 6rem;
+    font-size: 1.2rem;
+  }
+  .decoArrow {
+    max-height: 35rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    gap: 2rem 0;
+    grid-template-columns: 1fr;
+  }
+  .portfolio h2 {
+    word-break: normal;
+    font-size: 3rem;
+    color: var(--gray-5);
+    grid-column: 1;
+    max-width: auto;
+  }
+  .aboutMe,
+  .decoArrow,
+  .decoText,
+  .decoText::before,
+  .designBox::before {
+    display: none;
+  }
+  .designs {
+    padding: 0;
+    grid-column: 1;
+  }
+  .designBox img {
+    border-radius: 0 0.25rem 0.25rem 0.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio {
+    padding: 2rem 1.5rem 1rem;
+    margin: 0 1rem;
+  }
+  .portfolio h2 {
+    font-size: 2rem;
+  }
+}
