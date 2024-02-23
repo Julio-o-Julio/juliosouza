@@ -138,6 +138,12 @@
 }
 
 @media (max-width: 800px) {
+  .trainingContainer h2 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
   .trainingContainer {
     padding: 6rem 4rem;
     grid-template-columns: 1fr;
