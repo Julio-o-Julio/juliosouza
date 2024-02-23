@@ -162,8 +162,12 @@
   .trainingContainer {
     padding: 6rem 1rem;
   }
-  .extraTraining {
-    margin-left: 2rem;
+  .extraTraining h3::before {
+    top: 0;
+    left: 0;
+  }
+  .extraTraining h3 {
+    padding-top: 2rem;
   }
 }
 
@@ -173,15 +177,5 @@
   }
   .trainingContainer p {
     font-size: 1.125rem;
-  }
-  .extraTraining {
-    margin-left: 0;
-  }
-  .extraTraining h3::before {
-    top: 0;
-    left: 0;
-  }
-  .extraTraining h3 {
-    padding-top: 2rem;
   }
 }
