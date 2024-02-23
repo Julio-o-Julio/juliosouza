@@ -1,0 +1,74 @@
+.contact {
+  margin: 0 auto 7.75rem;
+  padding: 0 1rem;
+  display: grid;
+  gap: 8rem;
+  grid-template-columns: 1fr 2fr;
+}
+
+.contactTexts {
+  margin-left: 4.5rem;
+}
+
+.contactTexts h2 {
+  max-width: 4ch;
+  margin-bottom: 2.5rem;
+}
+
+.contactTexts p {
+  font-size: 1.5rem;
+}
+
+.contactTexts p strong {
+  font-weight: 500;
+}
+
+.btnsContact {
+  max-width: 36rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.btnContact {
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr min-content;
+  justify-content: left;
+  background-color: var(--gray-1);
+  border: 1px solid var(--gray-2);
+  border-radius: 0.25rem;
+}
+
+.btnContact h3 {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray-9);
+  justify-self: left;
+}
+.btnContact h3::before {
+  content: url("../img/icons/Email_FILL.svg");
+  position: absolute;
+  top: -0.1rem;
+  left: -4rem;
+  width: 24px;
+  height: 24px;
+}
+
+.btnContact span {
+  font-size: 1rem;
+  color: var(--gray-5);
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  justify-self: left;
+  grid-column: 1;
+}
+
+.btnContact img {
+  width: 2rem;
+  place-self: center;
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
