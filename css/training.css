@@ -1,5 +1,5 @@
 .training {
-  margin: 7.75rem 0;
+  margin: 7.75rem 0 0;
   background-color: var(--gray-11);
 }
 
@@ -141,6 +141,9 @@
   .trainingContainer h2 {
     font-size: 6rem;
   }
+  .trainingContainer p {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -154,7 +157,7 @@
     max-width: max-content;
   }
   .trainingContainer p {
-    font-size: 1.25rem;
+    margin-top: 0;
   }
 }
 
