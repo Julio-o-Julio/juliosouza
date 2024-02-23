@@ -1,0 +1,108 @@
+.footer {
+  background-color: var(--gray-1);
+}
+
+.footerContainer {
+  padding: 4rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.infos {
+  justify-self: center;
+}
+
+.infos h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray-7);
+  position: relative;
+}
+.infos h3::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -12px;
+  width: 4px;
+  height: 20px;
+  display: block;
+  background-image: linear-gradient(var(--green-2), var(--green-1));
+}
+
+.infos ul {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.infos a {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--gray-10);
+  position: relative;
+}
+.infos a::before {
+  position: absolute;
+  top: -4px;
+  left: -28px;
+}
+.infos:nth-child(2) a::before {
+  content: url("../img/icons/Arrow_FILL.svg");
+}
+.infos:nth-child(3) a::before {
+  content: url("../img/icons/Arrow_FILL.svg");
+  transform: rotate(-55deg);
+  left: -26px;
+}
+
+.footerBtnContact {
+  position: relative;
+  cursor: pointer;
+  font-family: var(--font-family-1);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--gray-10);
+  border: none;
+  background-color: transparent;
+}
+.footerBtnContact::before {
+  position: absolute;
+  top: 2px;
+  left: -28px;
+}
+.contactPhone::before {
+  content: url("../img/icons/Phone_SMALL_FILL.svg");
+}
+.contactEmail::before {
+  content: url("../img/icons/Email_SMALL_FILL.svg");
+}
+
+.profile,
+.copywrite {
+  margin-top: 4rem;
+  font-size: 1rem;
+  color: var(--gray-5);
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.profile .logo {
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.profile .logo img:nth-child(1) {
+  width: min-content;
+}
+.profile .logo img:nth-child(2) {
+  width: 5rem;
+  opacity: 0.7;
+}
+
+.networks {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
