@@ -38,6 +38,10 @@
   margin: 1rem;
   grid-row: 1;
   grid-column: 3 / -1;
+  max-width: 40ch;
+}
+.aboutMe strong {
+  font-weight: 500;
 }
 
 .designs {

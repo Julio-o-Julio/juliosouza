@@ -79,14 +79,29 @@
     font-size: 3.5rem;
   }
   .main h1::before {
-    content: url("../img/decorations/Deco_1_LARGE.svg");
-    top: 0.125rem;
+    content: "";
+    position: absolute;
+    top: 0.45rem;
     left: -1rem;
+    width: 0.5rem;
+    height: 2.75rem;
+    display: block;
+    background-image: linear-gradient(var(--green-2), var(--green-1));
   }
 }
 
 @media (max-width: 430px) {
   .main h1 {
     font-size: 3rem;
+  }
+  .main h1::before {
+    content: "";
+    position: absolute;
+    top: 0.45rem;
+    left: -1rem;
+    width: 0.42rem;
+    height: 2.3rem;
+    display: block;
+    background-image: linear-gradient(var(--green-2), var(--green-1));
   }
 }
