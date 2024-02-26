@@ -90,7 +90,7 @@
   width: 1.5rem;
 }
 
-@media (max-width: 1100px) {
+@media (width <= 1100px) {
   .designBox::before {
     top: 32%;
     left: -46%;
@@ -100,7 +100,7 @@
   }
 }
 
-@media (max-width: 1085px) {
+@media (width <= 1085px) {
   .portfolio h2 {
     font-size: 7rem;
     max-width: 20rem;
@@ -118,7 +118,7 @@
   }
 }
 
-@media (max-width: 975px) {
+@media (width <= 975px) {
   .portfolio h2 {
     font-size: 6rem;
     max-width: 17rem;
@@ -135,7 +135,7 @@
   }
 }
 
-@media (max-width: 870px) {
+@media (width <= 870px) {
   .portfolio h2 {
     font-size: 5rem;
     max-width: 14rem;
@@ -157,13 +157,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .portfolio {
     margin: 0 2rem;
   }
 }
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
   .portfolio h2 {
     font-size: 4rem;
     max-width: 11rem;
@@ -183,7 +183,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .portfolio {
     gap: 2rem 0;
     grid-template-columns: 1fr;
@@ -211,7 +211,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .portfolio {
     padding: 2rem 1.5rem 1rem;
     margin: 0 1rem;

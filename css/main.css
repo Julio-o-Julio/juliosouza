@@ -28,13 +28,13 @@
   font-size: 1.125rem;
 }
 
-@media (max-width: 1050px) {
+@media (width <= 1050px) {
   .mainTitles {
     padding-top: 1.5rem;
   }
 }
 
-@media (max-width: 1000px) {
+@media (width <= 1000px) {
   .main {
     padding: 4rem 1rem;
   }
@@ -43,7 +43,7 @@
   }
 }
 
-@media (max-width: 810px) {
+@media (width <= 810px) {
   .main h1 {
     font-size: 3.5rem;
   }
@@ -58,7 +58,7 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (width <= 650px) {
   .main h1 {
     font-size: 3rem;
   }
@@ -67,7 +67,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .main {
     padding-left: 2rem;
     grid-template-columns: 1fr;
@@ -90,7 +90,7 @@
   }
 }
 
-@media (max-width: 430px) {
+@media (width <= 430px) {
   .main h1 {
     font-size: 3rem;
   }

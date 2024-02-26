@@ -72,13 +72,13 @@
   grid-column: 3;
 }
 
-@media (max-width: 1030px) {
+@media (width <= 1030px) {
   .contact {
     gap: 4rem;
   }
 }
 
-@media (max-width: 800px) {
+@media (width <= 800px) {
   .contactTexts h2 {
     font-size: 6rem;
   }
@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .contact {
     padding: 6rem 4rem 0;
     gap: 3.75rem;
@@ -103,7 +103,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .contact {
     padding: 6rem 1rem 0;
     gap: 5.75rem;
@@ -123,7 +123,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .contactTexts h2 {
     font-size: 3rem;
   }

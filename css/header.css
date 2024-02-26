@@ -122,7 +122,7 @@
   border-color: #fff;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   a.none {
     display: none;
   }

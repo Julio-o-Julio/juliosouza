@@ -122,13 +122,13 @@
   gap: 1rem;
 }
 
-@media (max-width: 1150px) {
+@media (width <= 1150px) {
   .courses li {
     margin-right: 2rem;
   }
 }
 
-@media (max-width: 1050px) {
+@media (width <= 1050px) {
   .trainingContainer {
     gap: 2rem;
   }
@@ -137,7 +137,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (width <= 800px) {
   .trainingContainer h2 {
     font-size: 6rem;
   }
@@ -146,7 +146,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .trainingContainer {
     padding: 6rem 4rem;
     grid-template-columns: 1fr;
@@ -161,7 +161,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .trainingContainer {
     padding: 6rem 1rem;
   }
@@ -174,7 +174,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .trainingContainer h2 {
     font-size: 3rem;
   }
