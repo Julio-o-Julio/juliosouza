@@ -152,15 +152,15 @@
         </p>
       </div>
       <div class="btnsContact">
-        <button class="btnContact">
+        <button class="btnContact copy" title="Copiar o E-mail">
           <img class="decoIcon" src="./img/icons/Email_FILL.svg" />
-          <h3>E-mail</h3>
+          <h3 class="excludeFromCopy">E-mail</h3>
           <span>julio.souza.web@gmail.com</span>
           <img class="functionIcon" src="./img/icons/Copy_FILL.svg" />
         </button>
-        <button class="btnContact">
+        <button class="btnContact copy" title="Copiar o Telefone">
           <img class="decoIcon" src="./img/icons/Phone_FILL.svg" />
-          <h3>Telefone</h3>
+          <h3 class="excludeFromCopy">Telefone</h3>
           <span>(67) 99658-3378</span>
           <img class="functionIcon" src="./img/icons/Copy_FILL.svg" />
         </button>
@@ -168,6 +168,7 @@
           class="btnContact"
           href="https://api.whatsapp.com/send?phone=5567996583378"
           target="_blank"
+          title="Ir para o WhatsApp"
         >
           <img class="decoIcon" src="./img/icons/Whatsapp_FILL.svg" />
           <h3>WhatsApp</h3>
@@ -178,6 +179,7 @@
           class="btnContact"
           href="https://www.instagram.com/julio.webdesigner/"
           target="_blank"
+          title="Ir para o Instagram"
         >
           <img class="decoIcon" src="./img/icons/Instagram_FILL.svg" />
           <h3>Instagram</h3>
@@ -188,6 +190,7 @@
           class="btnContact"
           href="https://www.linkedin.com/in/dev-julio-souza/"
           target="_blank"
+          title="Ir para o Linkedin"
         >
           <img class="decoIcon" src="./img/icons/Linkedin_FILL.svg" />
           <h3>Linkedin</h3>
@@ -204,16 +207,16 @@
           <ul>
             <li>
               <button
-                class="footerBtnContact contactPhone"
-                title="Clique para copiar"
+                class="footerBtnContact contactPhone copy"
+                title="Copiar Telefone"
               >
                 (67) 99658-3378
               </button>
             </li>
             <li>
               <button
-                class="footerBtnContact contactEmail"
-                title="Clique para copiar"
+                class="footerBtnContact contactEmail copy"
+                title="Copiar E-mail"
               >
                 julio.souza.web@gmail.com
               </button>
@@ -281,5 +284,12 @@
         </span>
       </div>
     </footer>
+
+    <div class="messageCopied" id="messageCopied">
+      Texto copiado!
+      <div class="progressBar" id="progressBar"></div>
+    </div>
+
+    <script src="./js/copy.js"></script>
   </body>
 </html>
