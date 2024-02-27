@@ -167,17 +167,8 @@
 
   .profile {
     margin-top: 2rem;
-    justify-self: start;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
   }
-  .profile .logo {
-    flex-direction: row;
-  }
-  .networks {
-    margin: 0;
-  }
+
   .copywrite {
     text-align: center;
     margin-top: 1rem;
