@@ -40,6 +40,12 @@
   background-color: var(--gray-1);
   border: 1px solid var(--gray-2);
   border-radius: 0.25rem;
+  box-shadow: 0 2px 4px var(--gray-1);
+  transition: all 0.2s;
+}
+.btnContact:hover {
+  background-color: transparent;
+  box-shadow: 0 4px 8px var(--gray-1);
 }
 
 .btnContact h3 {

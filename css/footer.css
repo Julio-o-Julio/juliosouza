@@ -43,6 +43,13 @@
   line-height: 1.4;
   color: var(--gray-10);
   position: relative;
+  transition: color 0.2s;
+}
+.infos:hover a {
+  color: var(--gray-6);
+}
+.infos a:hover {
+  color: var(--gray-12);
 }
 .infos a::before {
   position: absolute;
@@ -68,6 +75,13 @@
   color: var(--gray-10);
   border: none;
   background-color: transparent;
+  transition: color 0.2s;
+}
+.infos:hover .footerBtnContact {
+  color: var(--gray-6);
+}
+.infos .footerBtnContact:hover {
+  color: var(--gray-12);
 }
 .footerBtnContact::before {
   position: absolute;
