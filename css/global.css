@@ -3,7 +3,7 @@
 :root {
   --gradient: linear-gradient(to bottom, var(--green-2), var(--green-1));
 
-  --green-1: #67dd0a;
+  --green-1: #65dd0a;
   --green-2: #b6f829;
   --green-3: #c8fcc8;
   --green-4: #5eaf5e;

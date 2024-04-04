@@ -58,6 +58,7 @@
   height: min-content;
 }
 .designBox::before {
+  content: attr(data-date);
   color: var(--gray-7);
   font-size: 1.125rem;
   font-weight: 500;
@@ -67,19 +68,52 @@
   padding: 1rem 0;
   background-color: #fff;
 }
-.designBox:nth-child(1)::before {
-  content: "01/2024";
+.designBox::after {
+  content: "VISUALIZAR";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--green-5);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 1rem;
+  background-color: #65dd0aaa;
+  border-radius: 0.125rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
-.designBox:nth-child(2)::before {
-  content: "11/2023";
-}
-.designBox:nth-child(3)::before {
-  content: "08/2023";
+.designBox:hover::after {
+  opacity: 1;
 }
 
 .designBox img {
   border-radius: 0.25rem;
   box-shadow: 0 4px 8px var(--gray-2);
+  transition: filter 0.3s ease;
+}
+.designBox:hover img {
+  filter: blur(2px);
+}
+
+.btnView {
+  margin-top: -2rem;
+  width: min-content;
+  color: var(--green-5);
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  align-items: center;
+  justify-self: right;
+  gap: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border: 1px solid var(--green-1);
+  border-radius: 0.25rem;
+  display: none;
+}
+.btnView img {
+  width: 1.5rem;
 }
 
 .btnViewMore {
@@ -216,8 +250,14 @@
     padding: 0;
     grid-column: 1;
   }
-  .designBox img {
-    border-radius: 0 0.25rem 0.25rem 0.25rem;
+  .designBox::after {
+    display: none;
+  }
+  .designBox:hover img {
+    filter: blur(0px);
+  }
+  .btnView {
+    display: flex;
   }
 }
 
